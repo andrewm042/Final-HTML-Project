@@ -7,9 +7,11 @@
         <meta charset="UTF-8">
         <title>Final Project Home</title>
         <style>
+            /*This is simply the background color*/
             html {
                 background-color: #add8e6;
             }
+            /*This is to center the paragraphs*/
             .center {
                 margin: auto;
                 width: 50%;
@@ -17,27 +19,32 @@
                 justify-content: center;
                 text-align: center;
             }
+            /*This is to center the unordered list*/
             ul.myul {
                 display: inline-block;
                 text-align: left;
             }
+            /*This is the border for the table*/
             table, th {
                 border: 1px solid black;
             }
+            /*This was the only way to get the table centered that I could find and work*/
             table {
                 margin-left: 130px;
             }
+            /*This is the style for the sidebar*/
             .sidenav {
-                height: 100%; /* Full-height: remove this if you want "auto" height */
-                width: 160px; /* Set the width of the sidebar */
-                position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-                z-index: 1; /* Stay on top */
-                top: 0; /* Stay at the top */
+                height: 100%;
+                width: 160px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
                 left: 0;
-                background-color: #111; /* Black */
-                overflow-x: hidden; /* Disable horizontal scroll */
+                background-color: #111;
+                overflow-x: hidden;
                 padding-top: 20px;
             }
+            /*This is the style for the color and from making the hyperlinks change the color*/
             .sidenav a {
                 padding: 6px 8px 6px 16px;
                 text-decoration: none;
@@ -45,13 +52,16 @@
                 color: #818181;
                 display: block;
             }
+            /*This changes the text color when the users hovers over the sidebar*/
             .sidenav a:hover {
                 color: #f1f1f1;
             }
+            /*These are the setting for the main code*/
             .main {
-                margin-left: 160px; /* Same as the width of the sidebar */
+                margin-left: 160px;
                 padding: 0px 10px;
             }
+            /*These are some extra settings for the sidebar and main code*/
             @media screen and (max-height: 450px) {
                 .sidenav {padding-top: 15px;}
                 .sidenav a {font-size: 18px;}
