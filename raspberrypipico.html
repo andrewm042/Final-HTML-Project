@@ -16,17 +16,54 @@
                 justify-content: center;
                 text-align: center;
             }
+            .sidenav {
+                height: 100%; /* Full-height: remove this if you want "auto" height */
+                width: 160px; /* Set the width of the sidebar */
+                position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+                z-index: 1; /* Stay on top */
+                top: 0; /* Stay at the top */
+                left: 0;
+                background-color: #111; /* Black */
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 20px;
+            }
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+            }
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+            .main {
+                margin-left: 160px; /* Same as the width of the sidebar */
+                padding: 0px 10px;
+            }
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
         </style>
     </head>
     <body>
-        <div class="center">
-            <h1>Raspberry Pi Pico</h1>
-            <img src="raspberrypipicopage.png" alt="Raspberry Pi Pico">
+        <div class="sidenav">
+            <a href="index.html">Home</a>
+            <a href="raspberrypi5.html">RPi 5</a>
+            <a style="background-color: #585858; color: #cacaca;">RPi Pico</a>
+            <a href="agc.html">AGC</a>
         </div>
-        <div class="center">
-            <div class="into">
-                <p>The Raspberry Pi Pico is a small microcontroller based board that uses minescule amounts of power to compleate a task. The Raspberry Pi Pico has two core meaning you can program it to run two parrallel tasks and it can be programmed in micropython (Subset on python) and even in C++. The Raspberry Pi Pico can be used for many things like to data logging, small to mediumm sized robots, analog sensing, etc. It is a small scale cheap and simple board.</p>
+        <diiv class="main">
+            <div class="center">
+                <h1>Raspberry Pi Pico</h1>
+                <a href="https://www.raspberrypi.com/products/raspberry-pi-pico/"><img src="raspberrypipicopage.png" alt="Raspberry Pi Pico"></a>
             </div>
-        </div>
+            <div class="center">
+                <div class="into">
+                    <p>The Raspberry Pi Pico is a small microcontroller based board that uses minescule amounts of power to compleate a task. The Raspberry Pi Pico has two core meaning you can program it to run two parrallel tasks and it can be programmed in micropython (Subset on python) and even in C++. The Raspberry Pi Pico can be used for many things like to data logging, small to mediumm sized robots, analog sensing, etc. It is a small scale cheap and simple board.</p>
+                </div>
+            </div>
+        </diiv>
     </body
 </html>

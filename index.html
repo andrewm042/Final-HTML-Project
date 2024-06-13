@@ -26,61 +26,98 @@
             table {
                 margin-left: 130px;
             }
+            .sidenav {
+                height: 100%; /* Full-height: remove this if you want "auto" height */
+                width: 160px; /* Set the width of the sidebar */
+                position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+                z-index: 1; /* Stay on top */
+                top: 0; /* Stay at the top */
+                left: 0;
+                background-color: #111; /* Black */
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 20px;
+            }
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+            }
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+            .main {
+                margin-left: 160px; /* Same as the width of the sidebar */
+                padding: 0px 10px;
+            }
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
         </style>
     </head>
     <body>
-        <div class="center">
-            <h2>Modern Tech</h2>
-            <p>In modern times computers have become very powerful and we also have made very tiny, efficient, and some what powerful Sbcs (Single board computers). These computer are so much more powerfull than even the first computer to bring man to the moon.</p>
-            <p>The Raspberry Pi 5 and the Raspberry Pi Pico are prime examples of this.</p>
+        <div class="sidenav">
+            <a style="background-color: #585858; color: #cacaca;">Home</a>
+            <a href="raspberrypi5.html">RPi 5</a>
+            <a href="raspberrypipico.html">RPi Pico</a>
+            <a href="agc.html">AGC</a>
         </div>
-        <div class="center">
-            <table>
-                <tr>
-                    <th></th>
-                    <th>Raspberry Pi 5</th>
-                    <th>Raspberry Pi Pico</th>
-                    <th>Apollo Guidence Computer</th>
-                </tr>
-                <tr>
-                    <th>Images</th>
-                    <th><img src="raspberrypi5.png" alt="Raspberry Pi 5 Image" width="150" height="150"></th>
-                    <th><img src="raspberrypipico.png" alt="Raspberry Pi Pico Image" width="150" height="150"></th>
-                    <th><img src="agc.png" alt="Apollo Guidence Computer Image" width="150" height="150"></th>
-                </tr>
-                <tr>
-                    <th>Clock Speed</th>
-                    <th>2.4Ghz</th>
-                    <th>300Mhz</th>
-                    <th>2Mhz</th>
-                </tr>
-                <tr>
-                    <th>Power Usage</th>
-                    <th>2.7w</th>
-                    <th>0.46w</th>
-                    <th>55w</th>
-                </tr>
-                <tr>
-                    <th>Memory</th>
-                    <th>1GB, 2GB,  4GB, 8GB</th>
-                    <th>264KB</th>
-                    <th>4KB</th>
-                </tr>
-                <tr>
-                    <th>Storage</th>
-                    <th>>500GB</th>
-                    <th>16MB</th>
-                    <th>32KB</th>
-                </tr>
-            </table>
-        </div>
-        <div class="center">
-            <h2>Learn more:</h2>
-            <ul class="myul">
-                <li><a href="raspberrypi5.html">Raspberry Pi 5</a></li>
-                <li><a href="raspberrypipico.html">Raspberry Pi Pico</a></li>
-                <li><a href="agc.html">Apollo Guidence Computer</a></li>
-            </ul>
-        </div>
+        <diiv class="main">
+            <div class="center">
+                <h2>Modern Tech</h2>
+                <p>In modern times computers have become very powerful and we also have made very tiny, efficient, and some what powerful Sbcs (Single board computers). These computer are so much more powerfull than even the first computer to bring man to the moon.</p>
+                <p>The Raspberry Pi 5 and the Raspberry Pi Pico are prime examples of this.</p>
+            </div>
+            <div class="center">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Raspberry Pi 5</th>
+                        <th>Raspberry Pi Pico</th>
+                        <th>Apollo Guidence Computer</th>
+                    </tr>
+                    <tr>
+                        <th>Images</th>
+                        <th><a href="https://sunhokey.cn/products/new-product-raspberry-pi-5-4gb-8gb-ram-2-4ghz-quad-core-64-bit-mini-pc-raspberry-pi-5-development-board"><img src="raspberrypi5.png" alt="Raspberry Pi 5 Image" width="150" height="150"></a></th>
+                        <th><a href="https://www.waveshare.com/raspberry-pi-pico-h.htm"><img src="raspberrypipico.png" alt="Raspberry Pi Pico Image" width="150" height="150"></a></th>
+                        <th><a href="https://en.wikipedia.org/wiki/Apollo_Guidance_Computer"><img src="agc.png" alt="Apollo Guidence Computer Image" width="150" height="150"></a></th>
+                    </tr>
+                    <tr>
+                        <th>Clock Speed</th>
+                        <th>2.4Ghz</th>
+                        <th>300Mhz</th>
+                        <th>2Mhz</th>
+                    </tr>
+                    <tr>
+                        <th>Power Usage</th>
+                        <th>2.7w</th>
+                        <th>0.46w</th>
+                        <th>55w</th>
+                    </tr>
+                    <tr>
+                        <th>Memory</th>
+                        <th>1GB, 2GB,  4GB, 8GB</th>
+                        <th>264KB</th>
+                        <th>4KB</th>
+                    </tr>
+                    <tr>
+                        <th>Storage</th>
+                        <th>>500GB</th>
+                        <th>16MB</th>
+                        <th>32KB</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="center">
+                <h2>Learn more:</h2>
+                <ul class="myul">
+                    <li><a href="raspberrypi5.html">Raspberry Pi 5</a></li>
+                    <li><a href="raspberrypipico.html">Raspberry Pi Pico</a></li>
+                    <li><a href="agc.html">Apollo Guidence Computer</a></li>
+                </ul>
+            </div>
+        </diiv>
     </body>
 </html>
