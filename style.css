@@ -21,6 +21,7 @@ html {
 }
 /*This is to center the unordered list*/
 ul.myul {
+    width: 50%;
     display: inline-block;
     text-align: left;
 }
@@ -32,4 +33,7 @@ table, th {
 table {
     padding-left: auto;
     padding-right: auto;
+}
+li a {
+    float: left;
 }
