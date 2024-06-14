@@ -11,6 +11,14 @@ html {
     justify-content: center;
     text-align: center;
 }
+/*The intro element to give the paragraphs more space*/
+.intro {
+    margin: auto;
+    width: 75%;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
 /*This is to center the unordered list*/
 ul.myul {
     display: inline-block;
