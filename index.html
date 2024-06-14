@@ -10,6 +10,7 @@
             /*This is simply the background color*/
             html {
                 background-color: #add8e6;
+                padding-top: 50px;
             }
             /*This is to center the paragraphs*/
             .center {
@@ -35,8 +36,12 @@
             }
         </style>
         <link rel="stylesheet" href="sidebar.css">
+        <link rel="stylesheet" href="topnav.css">
     </head>
     <body>
+        <div class="topnav">
+            <a id="date"></a>
+        </div> 
         <div class="sidenav">
             <a style="background-color: #585858; color: #cacaca;" >Home</a>
             <a href="raspberrypi5.html">RPi 5</a>
@@ -91,5 +96,12 @@
                 </table>
             </div>
         </div>
+        <!--Date script-->
+        <script>
+            // Create a new `Date` object
+            const now = new Date();
+            // Update live date in topnav 
+            document.getElementById("date").innerHTML = now.toLocaleDateString();
+        </script>
     </body>
 </html>
